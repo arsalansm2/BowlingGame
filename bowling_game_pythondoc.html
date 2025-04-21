@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module bowling_game_pythondoc</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">bowling_game_pythondoc</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cshafiars%5Cdesktop%5Cfl%20resources%5Csft%5Cbowling_game_pythondoc.py">c:\users\shafiars\desktop\fl resources\sft\bowling_game_pythondoc.py</a></td></tr></table>
+    <p><span class="code">#&nbsp;bowling_game.py</span></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="bowling_game_pythondoc.html#BowlingGame">BowlingGame</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="BowlingGame">class <strong>BowlingGame</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">A&nbsp;class&nbsp;to&nbsp;simulate&nbsp;a&nbsp;standard&nbsp;10-pin&nbsp;bowling&nbsp;game.<br>
+&nbsp;<br>
+Methods:<br>
+--------<br>
+<a href="#BowlingGame-roll">roll</a>(pins):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Records&nbsp;the&nbsp;number&nbsp;of&nbsp;pins&nbsp;knocked&nbsp;down&nbsp;in&nbsp;a&nbsp;single&nbsp;roll.<br>
+&nbsp;<br>
+<a href="#BowlingGame-score">score</a>():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Calculates&nbsp;the&nbsp;total&nbsp;score&nbsp;of&nbsp;the&nbsp;game.<br>
+&nbsp;<br>
+<a href="#BowlingGame-is_strike">is_strike</a>(i):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Returns&nbsp;True&nbsp;if&nbsp;the&nbsp;roll&nbsp;at&nbsp;index&nbsp;i&nbsp;is&nbsp;a&nbsp;strike.<br>
+&nbsp;<br>
+<a href="#BowlingGame-is_spare">is_spare</a>(i):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Returns&nbsp;True&nbsp;if&nbsp;the&nbsp;rolls&nbsp;at&nbsp;index&nbsp;i&nbsp;and&nbsp;i+1&nbsp;are&nbsp;a&nbsp;spare.<br>
+&nbsp;<br>
+<a href="#BowlingGame-strike_bonus">strike_bonus</a>(i):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Calculates&nbsp;bonus&nbsp;score&nbsp;for&nbsp;a&nbsp;strike.<br>
+&nbsp;<br>
+<a href="#BowlingGame-spare_bonus">spare_bonus</a>(i):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Calculates&nbsp;bonus&nbsp;score&nbsp;for&nbsp;a&nbsp;spare.<br>
+&nbsp;<br>
+<a href="#BowlingGame-sum_of_balls_in_frame">sum_of_balls_in_frame</a>(i):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Calculates&nbsp;the&nbsp;score&nbsp;for&nbsp;a&nbsp;standard&nbsp;frame.<br>
+&nbsp;<br>
+<a href="#BowlingGame-safe_get">safe_get</a>(index):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Safely&nbsp;returns&nbsp;the&nbsp;value&nbsp;at&nbsp;a&nbsp;given&nbsp;index&nbsp;or&nbsp;0&nbsp;if&nbsp;out&nbsp;of&nbsp;bounds.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="BowlingGame-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Initializes&nbsp;a&nbsp;new&nbsp;bowling&nbsp;game&nbsp;with&nbsp;an&nbsp;empty&nbsp;roll&nbsp;list.</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-is_spare"><strong>is_spare</strong></a>(self, i)</dt><dd><span class="code">Returns&nbsp;True&nbsp;if&nbsp;the&nbsp;rolls&nbsp;at&nbsp;i&nbsp;and&nbsp;i+1&nbsp;add&nbsp;up&nbsp;to&nbsp;a&nbsp;spare.</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-is_strike"><strong>is_strike</strong></a>(self, i)</dt><dd><span class="code">Returns&nbsp;True&nbsp;if&nbsp;the&nbsp;roll&nbsp;at&nbsp;index&nbsp;i&nbsp;is&nbsp;a&nbsp;strike.</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-roll"><strong>roll</strong></a>(self, pins)</dt><dd><span class="code">Records&nbsp;the&nbsp;number&nbsp;of&nbsp;pins&nbsp;knocked&nbsp;down&nbsp;in&nbsp;a&nbsp;roll.<br>
+&nbsp;<br>
+Parameters:<br>
+-----------<br>
+pins&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Number&nbsp;of&nbsp;pins&nbsp;knocked&nbsp;down&nbsp;(0&nbsp;to&nbsp;10).</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-safe_get"><strong>safe_get</strong></a>(self, index)</dt><dd><span class="code">Safely&nbsp;returns&nbsp;the&nbsp;roll&nbsp;value&nbsp;at&nbsp;index&nbsp;or&nbsp;0&nbsp;if&nbsp;out&nbsp;of&nbsp;bounds.<br>
+&nbsp;<br>
+Parameters:<br>
+-----------<br>
+index&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;index&nbsp;in&nbsp;the&nbsp;rolls&nbsp;list&nbsp;to&nbsp;access.<br>
+&nbsp;<br>
+Returns:<br>
+--------<br>
+int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;value&nbsp;at&nbsp;the&nbsp;index&nbsp;or&nbsp;0.</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-score"><strong>score</strong></a>(self)</dt><dd><span class="code">Calculates&nbsp;the&nbsp;total&nbsp;score&nbsp;for&nbsp;the&nbsp;game.<br>
+&nbsp;<br>
+Returns:<br>
+--------<br>
+int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Total&nbsp;score&nbsp;based&nbsp;on&nbsp;the&nbsp;standard&nbsp;bowling&nbsp;rules.</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-spare_bonus"><strong>spare_bonus</strong></a>(self, i)</dt><dd><span class="code">Returns&nbsp;the&nbsp;bonus&nbsp;points&nbsp;awarded&nbsp;for&nbsp;a&nbsp;spare.</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-strike_bonus"><strong>strike_bonus</strong></a>(self, i)</dt><dd><span class="code">Returns&nbsp;the&nbsp;bonus&nbsp;points&nbsp;awarded&nbsp;for&nbsp;a&nbsp;strike.</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-sum_of_balls_in_frame"><strong>sum_of_balls_in_frame</strong></a>(self, i)</dt><dd><span class="code">Returns&nbsp;the&nbsp;total&nbsp;pins&nbsp;knocked&nbsp;down&nbsp;in&nbsp;a&nbsp;frame.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
